@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --font-lato: "Lato", sans-serif;
+  --font-playfair: "Playfair Display", sans-serif;
+  --color-customPurple: #800080;
+}
+
+.header {
+  @apply bg-customPurple flex p-4 text-white;
+}
+
+.purple-btn {
+  @apply text-white font-playfair absolute px-4 py-1.5 border-none rounded-4xl w-50 h-10
+  text-center
+  text-xl bg-customPurple;
+}
+
+.heading1 {
+ @apply text-3xl font-playfair font-bold text-customPurple
+}
+
+.puja-image {
+  @apply rounded-2xl h-[360px] bg-amber-900 w-[310px] overflow-hidden
+}
