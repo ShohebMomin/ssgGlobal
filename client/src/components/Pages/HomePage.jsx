@@ -1,5 +1,8 @@
-import React from 'react'
 import HeadingParagraph from '../HeadingParagraph'
+import DevoteesSlider from '../DevoteesSlider'
+import SpiritualInsightsSlider from '../SpiritualInsightsSlider'
+import ReservePujaForm from '../ReservePujaForm'
+import RandomImageContainer from '../RandomImageContainer'
 
 function HomePage() {
   return (
@@ -42,7 +45,7 @@ function HomePage() {
         With years of experience and a commitment to preserving Vedic traditions, we aim to create a serene and uplifting experience for devotees seeking divine blessings.
       </p>
 
-      <div className="justify-center flex my-10">
+      <div className="justify-center flex mt-10 mb-20">
         <button className="purple-btn">Know More</button>
       </div>
       </div>
@@ -63,12 +66,25 @@ function HomePage() {
             <li>Dhanya Lakshmi - The harbinger of agricultural prosperity and nourishment.</li>
             <li>Gaja Lakshmi - The symbol of royalty, power, and grandeur.</li>
           </ul>
-          <div className="flex place-items-center font-[700] ">
-            <button className="mr-2 text-yellow-300">Know More</button><p className="text-customPurple">&gt;&gt;</p></div>
+          <div className="inline-flex items-center font-[700] ">
+            <button className="mr-2 font-playfair text-yellow-300">Know More</button><p className="text-customPurple">&gt;&gt;</p></div>
         </div>
        </div>
        {/* What Our Devotees Say */}
        <HeadingParagraph heading="What Our Devotees Say"/>
+       <DevoteesSlider/>
+
+       {/* Spiritual Insights & Puja Guides */}
+       <HeadingParagraph heading="Spiritual Insights & Puja Guides"/>
+       <SpiritualInsightsSlider/>
+
+       {/* Reserver Puja form */}
+       <ReservePujaForm />
+
+
+       {/* Random Image container */}
+        <RandomImageContainer/>
+
       </main>
     </>
   )
