@@ -1,29 +1,51 @@
 @import "tailwindcss";
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  #navbar-elments {
+    display: none; /* Hide desktop nav on mobile */
+  }
+  
+  .purple-btn {
+    position: static;
+    margin: 1rem auto;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 @theme {
   --font-lato: "Lato", sans-serif;
   --font-playfair: "Playfair Display", sans-serif;
   --color-customPurple: #800080;
 }
-body{
-  @apply overflow-x-hidden
-}
-
-.header {
-  @apply bg-customPurple flex p-4 text-white;
+*, ::before, ::after {
+  box-sizing: border-box;
+  overflow-x: hidden
 }
 
 .purple-btn {
-  @apply text-white font-playfair absolute px-4 py-1.5 border-none rounded-4xl w-50 h-10
-  text-center
-  text-xl bg-customPurple;
+  @apply text-white font-playfair absolute md:px-4 md:py-1.5 border-none rounded-4xl h-8 md:w-50 md:h-10
+  text-center text-xs
+  md:text-xl bg-customPurple;
 }
 
 .heading1 {
-  @apply text-3xl font-playfair font-bold text-customPurple;
+  @apply text-xl md:text-3xl font-playfair font-bold ;
 }
 
 .puja-image {
-  @apply rounded-2xl h-[360px] bg-amber-900 w-[310px] overflow-hidden;
+  @apply rounded-2xl h-96 bg-amber-900 max-w-xs	 overflow-hidden;
 }
 
 /* force inner slick-slide div to behave like flex to allow spacing */
@@ -35,13 +57,13 @@ body{
 
 /* Left arrow */
 .slick-prev:before {
-  color: gold !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 30px !important;
 }
 
 /* Right arrow */
 .slick-next:before {
-  color: gold !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 30px !important;
 }
 
@@ -71,13 +93,18 @@ input[type="number"] {
 }
 
 .form-input {
-  @apply border-0 m-5 bg-white rounded-lg w-[530px] h-[56px] p-2
+  @apply border-0 m-5 bg-white rounded-lg max-w-3xl	 h-14	 p-2;
 }
 
-form #address, #message{
-  @apply w-[1099px]  border-0 m-5 bg-white rounded-lg  h-[56px] p-2
+form #address,
+#message {
+  @apply max-w-6xl border-0 m-5 bg-white rounded-lg  h-14	 p-2;
 }
 
-.testing-class{
-  @apply w-80 mx-10 h-auto justify-center py-5 px-5 text-white font-lato
+.testing-class {
+  @apply md:w-80 md:mx-10 md:h-auto justify-center md:py-5 md:px-5 text-white font-lato;
+}
+
+.why-ssg-global{
+  @apply md:p-10 px-5 md:justify-center flex
 }

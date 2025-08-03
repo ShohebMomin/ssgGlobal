@@ -6,15 +6,17 @@ const Footer = () => {
   return (
     <>
       <main>
-        <div id="footer" className="bg-customPurple flex justify-center p-2">
-            <div id="logo-container" className="testing-class">
+        <div id="footer" className="bg-customPurple md:flex hidden justify-center p-2">
+
+            <div id="logo-container" className="testing-class w-52">
               <img src={logo} alt="logo" />
             </div>
+
             <div id="quick-links" className="testing-class text-justify">
               <p>Ut sit luctus lacus, dui. Vestibulum varius efficitur. malesuada placerat ex turpis fringilla scelerisque convallis. orci Ut sit luctus lacus, dui. Vestibulum varius efficitur. malesuada placerat ex turpis fringilla scelerisque convallis. orci </p>
             </div>
             <div id="contact-details" className="testing-class justify-center inline-flex">
-              <ul className="leading-10">
+              <ul className="md:leading-10">
               <h1>Quick Links</h1>
                 <li>Home</li>
                 <li>About Us</li>
@@ -27,12 +29,12 @@ const Footer = () => {
              <div id="contact-details" className="testing-class"> 
               <h1 className="mb-4">Contact Us</h1>
               <Contacts IconH="20" IconW="25" FontSize="text-sm"/>
-              <div className="py-5">
+              <div className="md:py-5">
                 <SocialMediaIcons/>
               </div>
              </div>
         </div>
-        <div id="credits" className="bg-amber-300 h-12  items-center justify-center font-lato flex">
+        <div id="credits" className="bg-amber-300 h-12 text-xs md:text-base items-center justify-center font-lato flex">
           <p>Designed & Developed by : VM3 Tech Solutions LLP</p>
         </div>
       </main>

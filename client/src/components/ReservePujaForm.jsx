@@ -4,7 +4,7 @@ const ReservePujaForm = () => {
   return (
     <>
 
-        <HeadingParagraph heading="Reserve Your Puja Now"/>
+        <HeadingParagraph heading="Reserve Your Puja Now" textColor="text-customPurple"/>
         <div className="max-w-6xl  flex justify-center m-auto mb-20 rounded-2xl bg-[#fffff0]">
         <form action="post" >
             <div id="name-number">
@@ -17,7 +17,7 @@ const ReservePujaForm = () => {
             </div>
             <div id="address-message" className="">
             <input  className="" type="text" id="address" placeholder="Address" />
-            <input className="!h-[112px]" type="text-box" id="message" placeholder="Message" />
+            <input className="!h-28" type="text-box" id="message" placeholder="Message" />
             </div>
             <div className="justify-center flex m-10"><button className="purple-btn m-auto">Reserve Now</button></div>
         </form>
