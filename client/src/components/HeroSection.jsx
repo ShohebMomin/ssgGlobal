@@ -12,6 +12,10 @@ const HeroSection = (props) => {
               </div>
     </div>
   )
+  HeroSection.defaultProps = {
+   layout: "absolute top-28 md:left-15 left-auto h-auto w-20 md:w-96",
+   textSize: "text-xs md:text-4xl"
+  };
 }
 
 export default HeroSection

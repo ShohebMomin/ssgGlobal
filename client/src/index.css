@@ -108,3 +108,14 @@ form #address,
 .why-ssg-global{
   @apply md:p-10 px-5 md:justify-center flex
 }
+
+.ashtalakshmi-div div{
+  @apply md:w-80 md:h-auto md:p-4 bg-amber-50 m-4 px-7 py-10 text-center justify-center rounded-2xl
+}
+
+.ashtalakshmi-content-div h2{
+  @apply text-xl text-customPurple
+}
+.ashtalakshmi-div img{
+@apply md:w-20 md:h-25 w-20 h-20 mx-auto
+}

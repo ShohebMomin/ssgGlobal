@@ -1,10 +1,10 @@
 import React from 'react'
 
 const HeadingParagraph = (props) => {
-  const headingClass = `heading1 mx-5 overflow-hidden ${props.textColor}`
+  const headingClass = `heading1 mx-5 overflow-hidden ${props.text}`
   return (
     <>
-      {/* // heading about us  */}
+      {/* // Heading */}
       <div id="about-us-homepage" className="flex justify-center items-center mt-10 h-auto">
 
        <span>
@@ -18,9 +18,9 @@ const HeadingParagraph = (props) => {
 
       </div>
 
-      {/* about us content */}
-      <div className=" mx-auto mb-10 max-w-6xl items-center text-center text-2xl">
+      <div className=" md:mx-auto mb-10 max-w-6xl items-center text-center text-2xl">
 
+      {/* Paragraph */}
       <p>
        {props.paragraph}
       </p>
