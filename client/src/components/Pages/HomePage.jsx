@@ -17,7 +17,7 @@ function HomePage() {
       {/* /////////////////////// */}
 
         {/* // about us  */}
-        <HeadingParagraph textColor="text-customPurple" heading="About US" paragraph=" At SSG Global, we are dedicated to helping you experience the spiritual energy and blessings of traditional Hindu rituals. Our team of experienced priests and spiritual practitioners specializes in conducting the sacred Ashtalakshmi Puja, ensuring it is performed with utmost devotion and authenticity." />
+        <HeadingParagraph text="text-customPurple" heading="About US" paragraph=" At SSG Global, we are dedicated to helping you experience the spiritual energy and blessings of traditional Hindu rituals. Our team of experienced priests and spiritual practitioners specializes in conducting the sacred Ashtalakshmi Puja, ensuring it is performed with utmost devotion and authenticity." />
       
       {/* puja images container  */}
       <div id="puja-images-container" className="flex justify-between h-auto px-20  mb-10">
@@ -47,7 +47,7 @@ function HomePage() {
       </div>
 
        {/* // heading The Ashtalakshmi Puja  */}
-      <HeadingParagraph heading="The Ashtalakshmi Puja" textColor="text-customPurple"/>
+      <HeadingParagraph heading="The Ashtalakshmi Puja" text="text-customPurple"/>
        <div id="ashtalakshmi-puja" className="w-full flex justify-center px-10">
         <div className="rounded-2xl mr-5 h-152	 w-136 overflow-hidden object-cover mb-5">
           <img width="530" height="608" src="\src\assets\Images\ashtalakshmi.jpg" alt="Ashtalakshmi" />
@@ -67,11 +67,11 @@ function HomePage() {
         </div>
        </div>
        {/* What Our Devotees Say */}
-       <HeadingParagraph heading="What Our Devotees Say" textColor="text-customPurple"/>
+       <HeadingParagraph heading="What Our Devotees Say" text="text-customPurple"/>
        <DevoteesSlider/>
 
        {/* Spiritual Insights & Puja Guides */}
-       <HeadingParagraph heading="Spiritual Insights & Puja Guides" textColor="text-customPurple"/>
+       <HeadingParagraph heading="Spiritual Insights & Puja Guides" text="text-customPurple"/>
        <SpiritualInsightsSlider/>
 
        {/* Reserver Puja form */}

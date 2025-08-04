@@ -4,6 +4,7 @@ import HeadingParagraph from '../HeadingParagraph'
 import mandirImage from "../../assets/Images/mandir-image.jpg"
 import pujaImage2 from "../../assets/Images/pujaImage2.jpg"
 import RandomImageContainer from '../RandomImageContainer'
+import CTA from '../CTA'
 
 const AboutUs = () => {
     const headingHeroSection = "At SSG Global, we bring you closer to the divine through authentic spiritual practices."
@@ -13,7 +14,7 @@ const AboutUs = () => {
         <HeroSection imagesrc="src\assets\Images\image2.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading={headingHeroSection} textSize="text-xs md:text-5xl"/>
 
         {/* Our Story */}
-        <HeadingParagraph heading="Our Story" textColor="text-customPurple"/>
+        <HeadingParagraph heading="Our Story" text="text-customPurple"/>
         <section className="md:flex">
            <div className="relative md:w-1/2 w-full md:h-full rounded-2xl md:pb-70 pb-32 px-10 flex">
                 <div className="rounded-2xl overflow-hidden md:w-80 md:h-96 w-40 h-48">
@@ -45,7 +46,7 @@ const AboutUs = () => {
 
         <section>
             <div className="w-full px-2 md:px-44 items-center text-center bg-customPurple md:text-2xl text-white font-lato my-2">
-            <HeadingParagraph heading="Our Mission & Vision" textColor="text-white"/>
+            <HeadingParagraph heading="Our Mission & Vision" text="text-white"/>
                 <h1 className="mb-6 text-2xl font-bold">Mission</h1>
                 <p className="mb-10">To empower individuals and families with the divine blessings of the Ashtalakshmi Puja, fostering prosperity, harmony, and spiritual well-being.</p>
                 <h1 className="mb-6 text-2xl font-bold">Vision</h1>
@@ -55,8 +56,8 @@ const AboutUs = () => {
 
         {/* Why SSG Global */}
         <section>
-            <HeadingParagraph heading="Why SSG Global" textColor="text-customPurple"/>
-            <div className="why-ssg-global">
+            <HeadingParagraph heading="Why SSG Global" text="text-customPurple"/>
+            <div className="why-ssg-global ">
                 <ul className="space-y-5 list-disc list-inside pl-6 text-gray-800 md:text-xl">
                     <li><span  className="text-purple-800 font-semibold">Authenticity:</span>   {" "}Our rituals are performed by experienced and certified priests with strict adherence to Vedic scriptures.</li>
                     <li><span  className="text-purple-800 font-semibold">Personalized Service:</span>  {" "}We customize every puja to meet your specific spiritual needs and intentions.</li>
@@ -73,14 +74,7 @@ const AboutUs = () => {
             </div>
             <RandomImageContainer/>
         </section>
-        <section>
-            <div className="w-full md:flex md:justify-center items-center h-auto text-center m-5">
-                <div className="md:h-20 items-center justify-center flex md:mx-10 m-1 md:text-2xl font-playfair font-bold">
-                    <h1>Ready to Invite Divine Blessings?</h1>
-                </div>
-                <button className="bg-customPurple md:px-4 px-2 text-xs md:text-xl rounded-4xl py-1.5 text-white">Reserve Your Puja</button>
-            </div>
-        </section>
+        <CTA heading="Ready to Invite Divine Blessings?" buttonText="Reserve Your Puja"/>
     </>
   )
 }
