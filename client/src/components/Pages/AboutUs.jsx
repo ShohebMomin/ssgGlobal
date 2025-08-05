@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeroSection from '../HeroSection'
 import HeadingParagraph from '../HeadingParagraph'
 import mandirImage from "../../assets/Images/mandir-image.jpg"

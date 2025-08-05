@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SpiritualImage from '../assets/Images/spiritual.jpg';
+import blogs from '/public/blogdata.json'
 
 
 const SpiritualInsightsSlider = () => {
@@ -39,44 +40,20 @@ const SpiritualInsightsSlider = () => {
   ],
   };
 
-  const slides = [
-    {
-      id: 1,
-      image: SpiritualImage,
-      date: 'Date',
-      heading: "The Spiritual Significance of the Ashtalakshmi Puja",
-      information: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, .............."
-    },
-    {
-      id: 2,
-      image: SpiritualImage,
-      date: 'Date',
-      heading: "The Spiritual Significance of the Ashtalakshmi Puja",
-      information: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, .............."
-    },
-    {
-      id: 3,
-      image: SpiritualImage,
-      date: 'Date',
-      heading: "The Spiritual Significance of the Ashtalakshmi Puja",
-      information: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, .............."
-    },
-  ];
-
   return (
     <div className="md:px-10 px-1 mx-auto">
       <Slider {...settings} className="-mx-2">
-        {slides.map((slide) => (
+        {blogs.map((blogs) => (
           <div className="bg-[#fffff0] p-4 rounded-2xl m-5 place-items-end-safe overflow-visible">
               <img
-                src={slide.image}
-                alt={slide.name}
+                src="src/assets/Images/spiritual.jpg"
+                alt={blogs.name}
                 className="w-full object-cover  rounded-2xl"
               />
               <div className="p-4">
-                <p className=" text-black">{slide.date}</p>
-                <h3 className="mt-2 text-xl font-semibold">{slide.heading}</h3>
-                <p className="mt-2 text-sm">{slide.information}</p>
+                <p className=" text-black">{blogs.date}</p>
+                <h3 className="mt-2 text-xl font-semibold">{blogs.heading}</h3>
+                <p className="mt-2 text-sm">{blogs.information}</p>
               </div>
               <div className="flex font-playfair text-xl font-bold"><button className="mr-2 text-[#D4AF37]">Read More</button><p className="text-customPurple font-lato font-bold ">&gt;&gt;</p></div>
             </div>

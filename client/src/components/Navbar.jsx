@@ -39,7 +39,7 @@ export default function Navbar() {
                 <ul id="navbar-elments" className="flex items-center gap-25 font-bold font-lato text-xl ">
                     <li id="home"><Link to="/">Home</Link></li>
                     <li id="about-us"><Link to="/about">About Us</Link></li>
-                    <li id="about-puja">About Puja</li>
+                    <li id="about-puja"><Link to="/about-puja">About Puja</Link></li>
                     <li id="blog">Blog</li>
                     <li id="contact">Contact</li>
                 </ul>
