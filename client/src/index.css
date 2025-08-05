@@ -114,7 +114,7 @@ form #address,
 }
 
 .ashtalakshmi-content-div h2{
-  @apply text-xl text-customPurple font-bold
+  @apply text-xl text-customPurple
 }
 .ashtalakshmi-div img{
 @apply md:w-20 md:h-25 w-20 h-20 mx-auto
