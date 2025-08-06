@@ -11,6 +11,7 @@ import AboutPuja from './components/Pages/AboutPuja';
 import BlogsPage from './components/Pages/BlogsPage';
 import ContactUs from './components/Pages/ContactUs';
 import AboutSwamiji from './components/Pages/AboutSwamiji';
+import SocialCause from './components/Pages/SocialCause';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-swamiji" element={<AboutSwamiji/>} />
+        <Route path="/social-cause" element={<SocialCause/>} />
       </Routes>
 
       <Footer />

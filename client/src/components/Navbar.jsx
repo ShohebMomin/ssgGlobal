@@ -41,7 +41,8 @@ export default function Navbar() {
                     <li id="about-us"><Link to="/about">About Us</Link></li>
                     <li id="about-puja"><Link to="/about-puja">About Puja</Link></li>
                     <li id="blog"><Link to="/blogs">Blog</Link></li>
-                    <li id="contact">Contact</li>
+                    <li id="contact"><Link to="/contact-us">Contact</Link></li>
+                    <li id="social-cause"><Link to="/social-cause">Social Cause</Link></li>
                 </ul>
                 </nav>
             </div>
