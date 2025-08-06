@@ -3,12 +3,14 @@ import Navbar from './components/Navbar'
 import HomePage from './components/Pages/HomePage'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ContactUs from './components/ContactUs';
+
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import AboutUs from './components/Pages/AboutUs';
 import AboutPuja from './components/Pages/AboutPuja';
 import BlogsPage from './components/Pages/BlogsPage';
+import ContactUs from './components/Pages/ContactUs';
+import AboutSwamiji from './components/Pages/AboutSwamiji';
 
 
 function App() {
@@ -25,7 +27,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/about-puja" element={<AboutPuja />} />
         <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-swamiji" element={<AboutSwamiji/>} />
       </Routes>
 
       <Footer />

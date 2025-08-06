@@ -4,7 +4,7 @@ import SpiritualInsightsSlider from '../SpiritualInsightsSlider'
 import ReservePujaForm from '../ReservePujaForm'
 import RandomImageContainer from '../RandomImageContainer'
 import HeroSection from '../HeroSection'
-import ContactUs from '../ContactUs'
+import GetInTouch from '../GetInTouch'
 
 function HomePage() {
   return (
@@ -76,11 +76,11 @@ function HomePage() {
 
        {/* Reserver Puja form */}
        <ReservePujaForm />
-        <ContactUs/>
 
        {/* Random Image container */}
-        {/* <RandomImageContainer/> */}
-
+        <RandomImageContainer/>
+        {/* Get in touch with us */}
+       <GetInTouch/>
       </main>
     </>
   )

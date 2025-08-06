@@ -16,14 +16,14 @@ const Contacts = (props) => {
             src: "https://img.icons8.com/ios/50/marker--v1.png"
         }
     ]
-    const ContactDivClass = `flex mb-5 ${props.FontSize}`
+    const ContactDivClass = `flex md:mb-5 m-2  ${props.FontSize}`
   return (
     <>
         <div className="justify-center items-center m-auto">
                 {contactDetail.map((detail)=>(
                     <div className={ContactDivClass}>
                         <img width={props.IconW} height={props.IconH} src={detail.src} alt={detail.name} />
-                        <p className="mx-5">{detail.name}</p>
+                        <p className="md:mx-5">{detail.name}</p>
                     </div>
                 ))}
                 

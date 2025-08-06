@@ -40,7 +40,7 @@ export default function Navbar() {
                     <li id="home"><Link to="/">Home</Link></li>
                     <li id="about-us"><Link to="/about">About Us</Link></li>
                     <li id="about-puja"><Link to="/about-puja">About Puja</Link></li>
-                    <li id="blog">Blog</li>
+                    <li id="blog"><Link to="/blogs">Blog</Link></li>
                     <li id="contact">Contact</li>
                 </ul>
                 </nav>

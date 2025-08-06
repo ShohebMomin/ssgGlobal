@@ -1,5 +1,4 @@
 import React from 'react'
-
 const HeroSection = (props) => {
     const className = `absolute  ${props.layout} flex items-center  text-white ${props.textSize} font-playfair font-bold md:leading-15`
     const Imagesrc = `${props.imagesrc}`

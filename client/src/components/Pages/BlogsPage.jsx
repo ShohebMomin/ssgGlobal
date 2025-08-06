@@ -4,12 +4,12 @@ import blogs from '/public/blogdata.json'
 const BlogsPage = () => {
   return (
     <>
-      <HeroSection textSize="text-xs md:text-5xl" imagesrc="src\assets\Images\book.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi."/>
+      <HeroSection textSize="text-xs md:text-2xl " imagesrc="src\assets\Images\book.jpg" layout="top-8 md:top-52 left-2 md:left-20" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi."/>
 
-      <div className="md:px-10 px-1 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="md:px-10 px-1 mx-auto my-5 grid grid-cols-1 md:grid-cols-3 gap-6">
       
         {blogs.map((blogs) => (
-          <div className="bg-[#fffff0] p-4 rounded-2xl m-5 place-items-end-safe overflow-visible md:w-md lg:w-md ">
+          <div className="bg-[#fffff0] p-4 rounded-2xl  place-items-end-safe overflow-visible md:w-md lg:w-md ">
               <img
                 src="src/assets/Images/spiritual.jpg"
                 alt={blogs.name}

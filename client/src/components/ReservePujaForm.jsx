@@ -4,7 +4,7 @@ const ReservePujaForm = () => {
   return (
     <>
 
-        <HeadingParagraph heading="Reserve Your Puja Now" textColor="text-customPurple"/>
+        <HeadingParagraph heading="Reserve Your Puja Now" text="text-customPurple"/>
         <div className="max-w-6xl  flex justify-center m-auto mb-20 rounded-2xl bg-[#fffff0]">
         <form action="post" >
             <div id="name-number">
