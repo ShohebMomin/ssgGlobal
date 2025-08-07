@@ -5,23 +5,54 @@ const ReservePujaForm = () => {
     <>
 
         <HeadingParagraph heading="Reserve Your Puja Now" text="text-customPurple"/>
-        <div className="max-w-6xl  flex justify-center m-auto mb-20 rounded-2xl bg-[#fffff0]">
-        <form action="post" >
-            <div id="name-number">
-            <input className="form-input" type="text" id="full-name" placeholder="Full Name"/>
-            <input className="form-input" type="number" id="phone-number" placeholder="Phone Number"/>
+        <div className="max-w-4xl mx-auto p-6  rounded-2xl bg-[#fffff0]">
+          <form className="space-y-4">
+            {/* 2 Column Grid */}
+            <div className="grid md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="p-3 rounded-md bg-white w-full focus:outline-none"
+              />
+              <input
+                type="tel"
+                placeholder="Phone No."
+                className="p-3 rounded-md bg-white w-full focus:outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="p-3 rounded-md bg-white w-full focus:outline-none"
+              />
+              <input
+                type="date"
+                className="p-3 rounded-md bg-white w-full focus:outline-none"
+              />
             </div>
-            <div id="email-date">
-            <input className="form-input" type="text" id="email" placeholder="Email"/>
-            <input className="form-input" type="date" id="preferred-date" placeholder="Preferred Date"/>
+
+            <input
+              type="text"
+              placeholder="Address"
+              className="p-3 rounded-md bg-white w-full focus:outline-none"
+            />
+
+            <textarea
+              rows="4"
+              placeholder="Message"
+              className="p-3 rounded-md bg-white w-full focus:outline-none"
+            />
+
+            {/* Button */}
+            <div className="flex justify-center pt-4">
+              <button
+                type="submit"
+                className="bg-[#800080] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#5e005e]"
+              >
+                Reserve Now
+              </button>
             </div>
-            <div id="address-message" className="">
-            <input  className="" type="text" id="address" placeholder="Address" />
-            <input className="!h-28" type="text-box" id="message" placeholder="Message" />
-            </div>
-            <div className="justify-center flex m-10"><button className="purple-btn m-auto">Reserve Now</button></div>
-        </form>
-        </div>
+          </form>
+    </div>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // icon library
 import SocialMediaIcons from "./SocialMediaIcons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -9,6 +9,11 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
+
+  const handleReserveClick = () => {
+    navigate("/#reserve");
+  };
   return (
     <>
         
@@ -33,7 +38,7 @@ export default function Navbar() {
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
 
-                <button id="reserve-puja-btn" className="purple-btn right-10 px-4 w-36 py-1.5">Reserve Your Puja</button>
+                <button onClick={handleReserveClick} id="reserve-puja-btn" className="purple-btn right-10 px-4 w-36 py-1.5">Reserve Your Puja</button>
                 {/* Menu items */}
                 <nav className={`flex-col z-50 m-auto md:flex-row md:flex gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 shadow md:shadow-none transition-all duration-300 ease-in-out ${isOpen ? "flex" : "hidden"}`}>
                 <ul id="navbar-elments" className="flex items-center gap-25 font-bold font-lato text-xl ">

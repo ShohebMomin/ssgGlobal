@@ -93,15 +93,10 @@ input[type="number"] {
 }
 
 .form-input {
-  @apply border-0 m-5 bg-white rounded-lg max-w-3xl	 h-14	 p-2;
+  @apply border-0 m-5 bg-white rounded-lg md:w-1/2	 md:h-14	 p-2;
 }
 
-form #address,
-#message {
-  @apply max-w-6xl border-0 m-5 bg-white rounded-lg  h-14	 p-2;
-}
-
-.testing-class {
+.footer-el {
   @apply md:w-80 md:mx-10 md:h-auto justify-center md:py-5 md:px-5 text-white font-lato;
 }
 

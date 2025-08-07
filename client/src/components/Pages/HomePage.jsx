@@ -5,8 +5,20 @@ import ReservePujaForm from '../ReservePujaForm'
 import RandomImageContainer from '../RandomImageContainer'
 import HeroSection from '../HeroSection'
 import GetInTouch from '../GetInTouch'
+import {React, useRef, useEffect,} from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 function HomePage() {
+  const navigate = useNavigate()
+  const reserveRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#reserve") {
+      reserveRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+  
   return (
     <>
       <main>
@@ -42,7 +54,7 @@ function HomePage() {
       </p>
 
       <div className="justify-center flex mt-10 mb-20">
-        <button className="purple-btn">Know More</button>
+        <button onClick={() => navigate('/about-swamiji')} className="purple-btn">Know More</button>
       </div>
       </div>
 
@@ -75,7 +87,9 @@ function HomePage() {
        <SpiritualInsightsSlider/>
 
        {/* Reserver Puja form */}
+       <div ref={reserveRef} id="reserve">
        <ReservePujaForm />
+       </div>
 
        {/* Random Image container */}
         <RandomImageContainer/>

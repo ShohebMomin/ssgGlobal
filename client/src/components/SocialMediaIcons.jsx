@@ -2,7 +2,7 @@
 const SocialMediaIcons = () => {
   return (
     <>
-      <div id="social-media-icons" className="flex  gap-1">
+      <div id="social-media-icons" className="flex  md:gap-5">
           <span id="linkedin-icon">
             <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="linkedin"/>
           </span>

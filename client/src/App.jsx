@@ -31,6 +31,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-swamiji" element={<AboutSwamiji/>} />
         <Route path="/social-cause" element={<SocialCause/>} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
 
       <Footer />
