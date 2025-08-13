@@ -12,6 +12,7 @@ import BlogsPage from './components/Pages/BlogsPage';
 import ContactUs from './components/Pages/ContactUs';
 import AboutSwamiji from './components/Pages/AboutSwamiji';
 import SocialCause from './components/Pages/SocialCause';
+import Blog from './components/Pages/Blog';
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-swamiji" element={<AboutSwamiji/>} />
         <Route path="/social-cause" element={<SocialCause/>} />
-        <Route path="*" element={<HomePage />} />
+        <Route path="/blog/:id" element={<Blog />} />
+        {/* <Route path="*" element={<HomePage />} /> */}
       </Routes>
 
       <Footer />

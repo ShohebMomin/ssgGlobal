@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeroSection from '../HeroSection'
 import HeadingParagraph from '../HeadingParagraph'
-import details from '/public/aboutSwamiji.json'
+// import details from '/aboutSwamiji.json'
 import RandomImageContainer from '../RandomImageContainer'
 import CTA from '../CTA'
 
 const AboutSwamiji = () => {
+  const [details, setDetails] = useState([]);
+   
+  useEffect(() => {
+    fetch("/aboutSwamiji.json")
+    .then((res) => res.json())
+    .then((data) => setDetails(data))
+    .catch((err) => console.log("error loading data: ",err))
+  },[]);
+
   return (
     <>
       <HeroSection imagesrc="src/assets/Images/home.jpg" layout="absolute top-10 md:top-70 md:left-15 left-7 h-auto w-20 md:w-96"/>
@@ -13,8 +22,8 @@ const AboutSwamiji = () => {
         <div className="md:w-3/4">
          <HeadingParagraph heading="Swami Subrahmanyam Giri" text="text-customPurple"/>
          {
-          details.map((information) => (
-          <div className="md:px-15 px-5 md:py-5 py-2"><p>{information.paragraph}</p></div>
+          details.map((information, index) => (
+          <div  className="md:px-15 px-5 md:py-5 py-2"><p key={index}>{information.paragraph}</p></div>
           )
             
           )
