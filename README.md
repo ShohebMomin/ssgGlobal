@@ -35,7 +35,7 @@ cd client npm install
 
 npm run dev
 
-App will run at: http://localhost:5173
+App will run at: [http://localhost:5173](https://ssg-global.vercel.app/)
 
 ------------------------------------------------------------------------
 
