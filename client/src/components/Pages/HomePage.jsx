@@ -22,7 +22,7 @@ function HomePage() {
   return (
     <>
       <main>
-        <HeroSection imagesrc="src\assets\Images\image1.png" layout="absolute top-28 md:left-15 left-auto h-auto w-20 md:w-96" textSize="text-xs md:text-4xl"
+        <HeroSection imagesrc="/Images/image1.png" layout="absolute top-28 md:left-15 left-auto h-auto w-20 md:w-96" textSize="text-xs md:text-4xl"
           heading="Experience Divine Blessings with the Sacred Ashtalakshmi Puja" />
 
 
