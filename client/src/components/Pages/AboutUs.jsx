@@ -11,7 +11,7 @@ const AboutUs = () => {
 
     return (
         <>
-            <HeroSection imagesrc="/public/Images/image2.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading={headingHeroSection} textSize="text-xs md:text-5xl" />
+            <HeroSection imagesrc="/Images/image2.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading={headingHeroSection} textSize="text-xs md:text-5xl" />
 
             {/* Our Story */}
             <HeadingParagraph heading="Our Story" text="text-customPurple" />
