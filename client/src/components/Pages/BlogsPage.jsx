@@ -25,7 +25,7 @@ const BlogsPage = () => {
         {blogs.map((blogs, index) => (
           <div key={index} className="bg-[#fffff0] p-4 rounded-2xl  place-items-end-safe overflow-visible md:w-md lg:w-md ">
             <img key={index}
-              src="src/assets/Images/spiritual.jpg"
+              src="/Images/spiritual.jpg"
               alt={blogs.name}
               className="md:w-96 lg:w-96 object-cover rounded-2xl m-auto"
             />

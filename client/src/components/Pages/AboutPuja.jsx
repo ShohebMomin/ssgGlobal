@@ -6,7 +6,7 @@ import RandomImageContainer from '../RandomImageContainer'
 const AboutPuja = () => {
   return (
     <>
-      <HeroSection textSize="text-xs md:text-5xl" imagesrc="/public/Images/aboutpuja.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi." />
+      <HeroSection textSize="text-xs md:text-5xl" imagesrc="/Images/aboutpuja.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi." />
 
       {/* Mission Statement */}
 
@@ -25,22 +25,22 @@ This puja is ideal for those seeking divine guidance to overcome challenges, ach
         <main className="mb-10">
           <div className="md:flex  justify-center ashtalakshmi-div">
 
-            <div className="ashtalakshmi-content-div"><img src="public/Images/adi-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/adi-lakshmi.png" alt="" />
               <h2>Adi Lakshmi:</h2>
               <p>Bestows eternal wealth and spiritual strength.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="public/Images/dhan-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/dhan-lakshmi.png" alt="" />
               <h2>Dhana Lakshmi:</h2>
               <p>Brings financial abundance and prosperity.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="/src/assets/Images/dhanya-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/dhanya-lakshmi.png" alt="" />
               <h2>Dhanya Lakshmi:</h2>
               <p>Blesses agricultural bounty and nourishment.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="/src/assets/Images/gaja-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/gaja-lakshmi.png" alt="" />
               <h2>Gaja Lakshmi:</h2>
               <p>Grants royal power, success, and prestige.</p>
             </div>
@@ -49,22 +49,22 @@ This puja is ideal for those seeking divine guidance to overcome challenges, ach
 
           <div className="md:flex justify-center ashtalakshmi-div">
 
-            <div className="ashtalakshmi-content-div"><img src="/src/assets/Images/santana-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/santana-lakshmi.png" alt="" />
               <h2>Santana Lakshmi:</h2>
               <p>Blesses with offspring and family harmony.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img className="!w-16" src="/src/assets/Images/veera-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img className="!w-16" src="/Images/veera-lakshmi.png" alt="" />
               <h2>Veera Lakshmi:</h2>
               <p>Offers courage, strength, and resilience.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="/src/assets/Images/vidya-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/vidya-lakshmi.png" alt="" />
               <h2>Vidya Lakshmi:</h2>
               <p>Embodies knowledge, wisdom, and education.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="/src/assets/Images/vijiya-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="/Images/vijiya-lakshmi.png" alt="" />
               <h2>Vijaya Lakshmi:</h2>
               <p>Ensures victory and success in endeavors.</p>
             </div>

@@ -24,7 +24,7 @@ function GetInTouch() {
             <GoogleMap/>
 
             <div className="justify-center items-center m-auto">
-              {contactDetail.map((detail)=>(
+              {contactDetail.map((detail, index)=>(
                       <div key={detail.name || index} className="flex md:mb-5 m-2">
                           <img width="40" height="40" src={detail.src} alt={detail.name} />
                           <p className="md:mx-5">{detail.name}</p>
