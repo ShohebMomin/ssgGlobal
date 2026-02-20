@@ -6,7 +6,7 @@ import RandomImageContainer from '../RandomImageContainer'
 const AboutPuja = () => {
   return (
     <>
-      <HeroSection textSize="text-xs md:text-5xl" imagesrc="public\aboutpuja.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi." />
+      <HeroSection textSize="text-xs md:text-5xl" imagesrc="/public/Images/aboutpuja.jpg" layout="top-2 md:top-10 left-auto right-5 md:right-10 h-full w-20 md:w-96" heading="Discover the sacred ritual that blesses every aspect of your life with the divine grace of the eight forms of Goddess Lakshmi." />
 
       {/* Mission Statement */}
 
@@ -25,12 +25,12 @@ This puja is ideal for those seeking divine guidance to overcome challenges, ach
         <main className="mb-10">
           <div className="md:flex  justify-center ashtalakshmi-div">
 
-            <div className="ashtalakshmi-content-div"><img src="public/adi-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="public/Images/adi-lakshmi.png" alt="" />
               <h2>Adi Lakshmi:</h2>
               <p>Bestows eternal wealth and spiritual strength.</p>
             </div>
 
-            <div className="ashtalakshmi-content-div"><img src="public/dhan-lakshmi.png" alt="" />
+            <div className="ashtalakshmi-content-div"><img src="public/Images/dhan-lakshmi.png" alt="" />
               <h2>Dhana Lakshmi:</h2>
               <p>Brings financial abundance and prosperity.</p>
             </div>

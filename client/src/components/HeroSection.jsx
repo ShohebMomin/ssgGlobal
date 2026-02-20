@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const HeroSection = ({ imagesrc, layout, textSize, heading }) => {
   const className = `absolute  ${layout} flex items-center  text-white ${textSize} font-playfair font-bold md:leading-15`
   // const Imagesrc = `${props.imagesrc}`
